@@ -1,0 +1,25 @@
+import random
+
+
+score = 0
+
+
+while True:
+ s = input("Enter 0 to play ")
+
+ if s == "0":
+   score += 1
+
+   n = random.randint(1, 10)
+   nu = random.randint(1, 10)
+   num = random.randint(1, 10)
+
+   q = (n, nu, num)
+   print(q)
+   
+   if n == nu == num:
+     print(f"Tus intentos fueron {score}")
+     break
+ else:
+  print(input("Enter a valid quote "))
+
